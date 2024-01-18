@@ -3,16 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valeria Bisso - WDD 230 - Web Frontend Development</title>
+    <meta
+      name="description"
+      content="Valeria Bisso - WDD230 course assignment portal"
+    />
+    <meta name="author" content="Valeria Bisso" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;1,600&family=Fraunces:wght@600;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
-    <title>Valeria Bisso</title>
   </head>
+
   <body>
-    <header></header>
+    <header>
+      <span>Valeria<br />Bisso</span>
+      <img src="/images/profile.png" alt="profile" />
+    </header>
+    <hr />
+
+    <nav>
+      <a href="/index.html">Home</a>
+      <a>Chamber</a>
+      <a>Site Plan</a>
+      <a>Form</a>
+    </nav>
+
     <main>
-      <h1>Valeria Bisso <i class="fa-sharp fa-thin fa-face-smile"></i></h1>
+      <h1>WDD 230: Web Frontend Development</h1>
+      <section id="links" class="card">
+        <h2>Learning Activities</h2>
+        <ul>
+          <li>Week 01: <a></a></li>
+          <li>Week 02: <a></a></li>
+          <li>Week 03: <a></a></li>
+          <li>Week 04: <a></a></li>
+          <li>Week 05: <a></a></li>
+          <li>Week 06: <a></a></li>
+        </ul>
+      </section>
+      <section id="info" class="card">
+        <h2>Information</h2>
+        <p>Rexburg, Idaho</p>
+        <p>-1° F - Mostly Cloudy</p>
+        <p>Page Visitis: 1</p>
+      </section>
     </main>
-    <footer></footer>
-    <script src="scripts/index.js"></script>
+
+    <footer>
+      <p id="copyright"></p>
+      <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
   </body>
 </html>
