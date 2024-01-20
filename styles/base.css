@@ -105,6 +105,11 @@ main ul{
     font-size: 18px;
     line-height: 1.8;
 }
+li a{
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+
+}
 
 footer{
     display: flex;
