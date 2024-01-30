@@ -14,17 +14,38 @@
         grid-row: 1/2;
         justify-self: start;
     }
-
+   
     nav{
-        flex-direction: row;
+        border:none;
+    }
+    nav a{
+        font-weight:bolder;
+        text-decoration: none;
+        color:#4a4a49;
+    }
+    nav a:hover{
+        color: rgb(74, 74, 73,0.7);
+    
+    }
+    #button{
+        display: none;
+    }
+   ul.menuList, ul.menuList.open{
+        display: flex;
         justify-content: space-around;
         align-items: center;
         padding-top: 1rem;
         padding-bottom: 2.5rem;
         padding-left: 10rem;
         padding-right: 10rem;
+
     }
 
+    .current-menu-item{
+        padding: 0.8em;
+        border-radius: 50%;
+    }
+    
     main{
         display: grid;
         grid-template-columns: 1.5fr 1fr;
