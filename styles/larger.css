@@ -30,7 +30,7 @@
     #button{
         display: none;
     }
-   ul.menuList, ul.menuList.open{
+    ul.menuList, ul.menuList.open{
         display: flex;
         justify-content: space-around;
         align-items: center;

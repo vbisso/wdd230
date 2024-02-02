@@ -1,0 +1,126 @@
+*{
+    margin: auto 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    color:#3d3d3a;
+    background-color: #FFFFFF;
+}
+/*HERO*/
+#hero{
+    display: grid;
+    grid-template-columns:  20px 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.1fr 0.5fr;
+}
+#hero-img{
+    grid-row: 1/5;
+    grid-column: 1/5;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+#hero-text{
+    grid-row: 2/3;
+    grid-column: 2/4;
+    text-align: left;
+    z-index: 2;
+}
+#hero-text p{
+    font-family: 'Playfair Display', serif;
+    color:#F2E7DC;
+    font-size: 28px;
+}
+/*JOIN BUTTON*/
+#join-container{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    z-index: 2;
+    text-align: left;
+}
+#join{
+    font-family: 'Lato', sans-serif;
+    padding: 0.4em;
+    font-size: 14px;
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    border: 0;
+    border-radius: 5%;
+    color: #FFFFFF;
+    background-color: #E2794C;
+    cursor: pointer;
+}
+#join:hover{
+    background-color: #F2E7DC;
+    color: #3d3d3a;
+}
+/*NAVIGATION*/
+.new-page{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(61, 61, 58);
+    z-index: 500;
+    transition: .5s linear;
+
+}
+.navigationList{
+    display: none;
+    list-style-type: none;
+    text-align: center;
+}
+
+.navigationList.open{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 0;
+    margin-top: 2em;
+    line-height: 2.5em;
+}
+
+
+.navigationList a{
+    text-decoration: none;
+    color:#F2E7DC;
+}
+.navigationList a:hover{
+    color:rgb(242, 231, 220,0.8);
+}
+
+
+header{
+    display: flex;
+    justify-content:space-between;
+}
+/*LOGO*/
+#logo{
+    width: 20%;
+    order: 2;
+    margin-right: 0.5em;
+}
+
+/*MENU BUTTOM*/
+#menuButton{
+    border: 0px;
+    background-color:white;
+    font-size: 1.5em;
+    cursor: pointer;
+    color:#3d3d3a;
+    z-index: 200;
+}
+
+
+.new-button{
+    position: absolute;
+    top:10px;
+    right:10px;
+    color:white;
+    background-color: rgb(61, 61, 58);
+    font-size: 1em;
+    border:none;
+
+}
