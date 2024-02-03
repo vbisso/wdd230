@@ -1,4 +1,4 @@
-@media screen and (min-width:650px){
+@media screen and (min-width:760px){
 
 
     /*button*/
@@ -50,7 +50,7 @@
         text-align: left;
         z-index: 2;
     }
-    #hero-text p{
+    #hero-text h1{
         font-size: 3.5em;
         text-align: left;
     }
@@ -69,5 +69,139 @@
         font-size: 1.2em;
     }
 
+    #events-section h2{
+        font-size:28px ;
+    }
+
+    #current-events {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        align-items: center; 
+        column-gap: 1em;
+        row-gap: 0.5em;
+    }
+
+    #event1 {
+        grid-row: 1/3;
+        grid-column: 1/2;   
+        margin: 0; 
+        justify-self: right;  
+        /*
+        display: flex;
+        flex-direction: column;
+        justify-self:end;*/
+    }
+
+    #event2 {
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+
+    #event3 {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+
+
+
+    #event2,
+    #event3 {
+        margin: 0;
+    }
+    
+
+    #weather-container{
+        display:grid;
+        margin-top: 2.5em;
+        grid-template-columns: 1fr 0.5fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    #weather-info{
+        text-align: center;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    #weather-info p{
+        font-size: 22px;
+    }
+    
+    #weather-icon{
+        text-align: left;
+        grid-column: 3/4;
+        grid-row: 1/2;
+    
+        
+    }
+    #weather-icon img{
+        width: 25%;
+    }
+    
+    #weather-date{
+        text-align: right;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    
+    }
+    #weather-date p{
+        font-size: 22px;
+    
+    }
+
+
+    #comp-container{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        text-align: center;
+        column-gap: 1em;
+        margin-left: 10em;
+        margin-right: 10em;
+    }
+
+    #comp1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+    }
+    #comp2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    #comp3{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .comp-card{
+        border:1px solid white;
+        background-color: #dae9ee9c;
+        border-radius: 2%;
+        margin:0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .comp-img-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+    }
+
+   
+
+   
+    
+    
+    
+
+   
+
 
 }
+
+
+
+
