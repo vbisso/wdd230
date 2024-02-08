@@ -69,59 +69,81 @@
         font-size: 1.2em;
     }
 
-    #events-section h2{
-        font-size:28px ;
+   
+
+    #events-section{
+        display:grid;
+        grid-template-columns: 2fr 1.5fr;
+        place-items: center;
     }
+
 
     #current-events {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        align-items: center; 
-        column-gap: 1em;
-        row-gap: 0.5em;
-    }
-
-    #event1 {
-        grid-row: 1/3;
-        grid-column: 1/2;   
-        margin: 0; 
-        justify-self: right;  
-        /*
-        display: flex;
-        flex-direction: column;
-        justify-self:end;*/
-    }
-
-    #event2 {
         grid-row: 1/2;
-        grid-column: 2/3;
-    }
-
-    #event3 {
-        grid-row: 2/3;
-        grid-column: 2/3;
-    }
-
-
-
-    #event2,
-    #event3 {
-        margin: 0;
+        grid-column: 1/2;
+        display: grid;
+        align-items: center; 
+        row-gap: 1em;
+        column-gap: 1em;
+        width:min-content;
     }
     
 
+    #events-section h2{
+        font-size:28px ;
+        grid-column: 1/3;
+        grid-row: 1/2;
+        margin-bottom: 1em;
+    }
+
+    #event1 {
+        grid-column: 1/2;    
+    }
+
+    #event2 {
+        grid-column: 2/3;
+    }
+
+    #event3 {
+        grid-column: 1/2;
+    }
+    #event4{
+        grid-column: 2/3;
+    }
+
+
     #weather-container{
         display:grid;
-        margin-top: 2.5em;
-        grid-template-columns: 1fr 0.5fr 1fr;
-        grid-template-rows: 1fr;
+        padding-bottom: 20em;
+        border-radius: 2.5%;
+        margin: 0;
+        width: 20em;
+    }
+
+    #weather-container h2 {
+        text-align: center;
+        font-size: 24px;
+        font-family: 'Playfair Display', serif;
+        grid-column:1/3 ;
+        grid-row: 1/2;
+    }
+
+    #weather-date{
+        text-align: center;
+        grid-column: 1/3;
+        grid-row: 2/3;
+    
+    }
+    #weather-date p{
+        font-size: 22px;
+        margin-bottom: 2em;
+    
     }
 
     #weather-info{
         text-align: center;
-        grid-column: 2/3;
-        grid-row: 1/2;
+        grid-column: 1/2;
+        grid-row: 3/4;
     }
     #weather-info p{
         font-size: 22px;
@@ -129,25 +151,13 @@
     
     #weather-icon{
         text-align: left;
-        grid-column: 3/4;
-        grid-row: 1/2;
-    
+        grid-column: 2/3;
+        grid-row: 3/4;
         
     }
-    #weather-icon img{
-        width: 25%;
-    }
+
     
-    #weather-date{
-        text-align: right;
-        grid-column: 1/2;
-        grid-row: 1/2;
-    
-    }
-    #weather-date p{
-        font-size: 22px;
-    
-    }
+   
 
 
     #comp-container{

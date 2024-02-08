@@ -32,7 +32,7 @@ function displayList(item){
     let deletebutton = document.createElement('button');
     li.textContent = item;
     deletebutton.textContent = '❌';
-    deletebutton.classList.add('delete');
+    //deletebutton.classList.add('delete');
     li.append(deletebutton);
     list.append(li);
     deletebutton.addEventListener('click',function(){
