@@ -1,6 +1,4 @@
 * {
-	margin-left: 0.5rem;
-    margin-right: 0.5rem;
 	padding: 0;
 	box-sizing: border-box;
 }
@@ -8,6 +6,7 @@ body{
     background-color: #eeebee;
     color:#4a4a49;
     font-family: 'Chivo', sans-serif;
+    width: fit-content;
 }
 body.dark{
     background-color: #211C21;
@@ -35,6 +34,7 @@ header span{
     grid-column: 1/2;
     grid-row: 2/3;
     text-align: center;
+    margin-left: .5em;
 }
 body.dark header{
     color:#F6F6F6;
@@ -43,10 +43,11 @@ body.dark header{
 #darkMode{
     width: 30px;
     height: 30px;
-    position: absolute;
-    top:30px;
-    right: 25px;
+    grid-column: 1/2;
+    grid-row:1/2;
     cursor: pointer;
+    justify-self: end;
+    margin-right: 1em;
 }
 body.dark #darkMode{
     /*filter: invert(100%);*/
@@ -130,6 +131,33 @@ body.dark #button{
     border: groove 5px #e0cee3;
 }
 
+.picture-container{
+    position: relative;
+}
+
+.picture-container img{
+    width:100%;
+    height: auto;
+    display: block;
+}
+.picture-label{
+    position: absolute;
+    bottom:0;
+    right:0;
+    left:0;
+    color:#4a4a49;
+    background-color: #f6f6f6b9;
+    font-family: 'Fraunces', sans-serif;
+    font-size: 50px;
+
+}
+.picture-label p{
+    margin: 0;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    text-align: center;
+}
+
 
 main{
     display: grid;
@@ -159,6 +187,8 @@ body.dark main h1{
 #links{
     grid-row: 2/3;
     padding-left: 0.5em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
 }
 body.dark #links{
     color:#4a4a49;
@@ -167,6 +197,8 @@ body.dark #links{
     text-align: center;
     display: flex;
     flex-direction: column;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
 }
 body.dark #info{
     color:#4a4a49;
@@ -191,11 +223,17 @@ main ul{
     list-style-type: none;
     font-size: 18px;
     line-height: 1.8;
+    margin-left: .5em;
 }
 
 li a{
     margin-left: 0.4em;
     margin-right: 0.4em;
+}
+.iframe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer{

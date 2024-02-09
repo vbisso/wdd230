@@ -22,7 +22,7 @@
   <body>
     <header>
       <span>Valeria<br />Bisso</span>
-      <img src="images/profile.png" alt="profile" />
+      <img src="images/profile.webp" alt="profile" />
       <img id="darkMode" src="images/darkMode.svg" alt="dark mode"/>
     </header>
     <hr/>
@@ -36,6 +36,19 @@
         <li><a>Form</a></li>
       </ul>
     </nav>
+
+    <div class="picture-container">
+      <picture>
+        <source media="(max-width: 400px)" srcset="images/small.webp"  width="500" height="281">
+        <source media="(max-width: 960px)" srcset="images/medium.webp" width="1000" height="563">
+        <img src="images/large.webp" alt="hero image" loading="lazy">
+      </picture>
+      <div class="picture-label">
+        <p>Arequipa Temple</p>
+      </div>
+
+    </div>
+    
 
     <main>
       <h1>WDD 230: Web Frontend Development</h1>
@@ -55,9 +68,15 @@
         <h2>Information</h2>
         <p>Rexburg, Idaho</p>
         <p>-1° F - Mostly Cloudy</p>
-        <p>Page Visitis: 1</p>
+        <p><span>Page Visitis: </span><span class="visits"></span></p> 
       </section>
     </main>
+
+    <div class="iframe">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5070.700923944041!2d-76.95190757985799!3d-12.069355549276901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c6ef6b787c51%3A0xdb4dfb638e48fae3!2sTemplo%20de%20Lima%20Per%C3%BA!5e0!3m2!1ses-419!2sus!4v1707446852619!5m2!1ses-419!2sus" width="1200" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+    
 
     <footer>
       <p id="copyright"></p>
