@@ -5,48 +5,45 @@
 body{
     font-family: 'Lato', sans-serif;
     color:#3d3d3a;
-    background-color: #FFFFFF;
+    background-color:#FAF9F6;
     width: fit-content;
 }
 /*HERO*/
 #hero{
-    display: grid;
-    grid-template-columns:  20px 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.1fr 0.5fr;
+    position: relative;
 }
 #hero-img{
-    grid-row: 1/5;
-    grid-column: 1/5;
     width: 100%;
-    height: 100%;
-    z-index: 0;
+    height: auto;
+    display: block;
 }
 #hero-text{
-    grid-row: 2/3;
-    grid-column: 2/4;
-    text-align: left;
-    z-index: 2;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    position: absolute;
+    left:5%;
+    top:20%;
+    width: 50%;
 }
 #hero-text h1{
     font-family: 'Playfair Display', serif;
-    color:#FFFFFF;
-    font-size: 28px;
+    color:#FAF9F6;
+    font-size: 2.5em;
+    text-align: left;
 }
 /*JOIN BUTTON*/
 #join-container{
-    grid-row: 3/4;
-    grid-column: 2/3;
-    z-index: 2;
     text-align: left;
 }
 #join{
     font-family: 'Lato', sans-serif;
-    padding: 0.4em;
+    padding: 1em;
     font-size: 14px;
-    padding-left: 1.1em;
-    padding-right: 1.1em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
     border: 0;
-    border-radius: 5%;
+    border-radius: 5px;
     color: #FFFFFF;
     background-color: #E2794C;
     cursor: pointer;
@@ -54,6 +51,45 @@ body{
 #join:hover{
     background-color: #F2E7DC;
     color: #3d3d3a;
+}
+/*
+@media screen and (max-width:680px){
+    #hero-text{
+        top:15%;
+        width: 50%;
+    }
+
+}*/
+@media screen and (max-width:555px){
+    #hero-text{
+        top:15%;
+        width: 50%;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:410px){
+    #hero-text{
+        top:20%;
+        width: auto;
+        flex-direction: row;
+        left: 0;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    #join{
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+
+    }
+   
+}
+@media screen and (max-width:335px){
+    #hero-text{
+        top:10%;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+   
 }
 /*NAVIGATION*/
 .new-page{
@@ -107,7 +143,7 @@ header{
 /*MENU BUTTOM*/
 #menuButton{
     border: 0px;
-    background-color:white;
+    background-color:#FAF9F6;
     font-size: 1.5em;
     cursor: pointer;
     color:#3d3d3a;
@@ -130,9 +166,6 @@ header{
 #events-section{
     margin: auto;
     text-align: center;
-    background-color:#F2E7DC;
-    padding-bottom: 3.5em;
-    column-gap: .5em;
 }
 
 #events-h2{
@@ -157,15 +190,12 @@ header{
 .event-card {
     position: relative;
     text-align: center;
-    margin: auto;
-    height: auto;
+    margin-left: 1em;
+    margin-right: 1em;
     margin-bottom: 1em;
-}
-.event-card{
     transition: transform .3s;
     cursor: pointer;
 }
-
 .event-card:hover{
     transform: scale(1.05);
 }
@@ -178,17 +208,11 @@ header{
     position: absolute;
     bottom: 3.2px;
     width: 100%;
-    background: rgba(255, 255, 255, 0.9);
+    background: #faf9f6df;
     padding: 1em;
     box-sizing: border-box;
     border-radius: 10px;
 }
-/*
-#weather-section{
-    margin-top: 2em;
-    background-color: rgba(242, 231, 220, 0.486);
-    padding-bottom: 3.5em;
-}*/
 
 
 #weather-container{
@@ -198,7 +222,6 @@ header{
     column-gap: 1.5em;
     padding: 2em;
     background: radial-gradient(circle, rgba(252,176,69,1) 0%, rgba(242,231,220,1) 100%);
-    border-radius: 2% ;
 }
 #weather-container h2 {
     text-align: center;
@@ -247,7 +270,7 @@ header{
     text-align: center;
     font-size: 24px;
     font-family: 'Playfair Display', serif;
-    padding-top: 2em;
+    padding-top: 1.5em;
     margin-bottom: 2em;
 }
 #comp-container{
@@ -255,8 +278,6 @@ header{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     text-align: center;
-    margin-left: 4em;
-    margin-right: 4em;
 }
 
 
@@ -284,7 +305,7 @@ header{
     margin-right: 2em;
     border:1px solid white;
     background-color: #dae9ee9c;
-    border-radius: 2%;
+    border-radius: 10px;
     padding: 1em;
 }
 
@@ -299,7 +320,7 @@ footer{
 }
 footer p{
     margin: 1em;
-    color:#FFFFFF
+    color:#FAF9F6;
 }
 
 

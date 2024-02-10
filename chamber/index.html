@@ -34,16 +34,24 @@
 
     </header>
 
-    <div id="hero"> <!--Hero img-->
-        <img id="hero-img" src="images/hero2webp.webp" alt="hero image" >
+    <div id="hero">
+        <!--Hero img-->
+        <picture>
+            <source srcset="images/small.webp" media="(max-width : 410px)">
+            <source srcset="images/medium.webp" media="(max-width : 555px)">
+            <img id="hero-img" src="images/large.webp" alt="hero image" loading="lazy" width="1174" height="660">
+        </picture> 
+        
         <div id="hero-text">
-            <h1>Miami<br> Chamber Of Commerce</h1>
+            
+            <h1>Miami<br> Chamber of Commerce</h1>  
+             
+            <div id="join-container">
+                <button id="join">Join Now</button>
+            </div>        
         </div>
         
-        <div id="join-container">
-            <button id="join">Join Now</button>
-        </div>
-        
+    
     </div>
 
     <main>
