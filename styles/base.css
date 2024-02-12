@@ -6,7 +6,6 @@ body{
     background-color: #eeebee;
     color:#4a4a49;
     font-family: 'Chivo', sans-serif;
-    width: fit-content;
 }
 body.dark{
     background-color: #211C21;
@@ -244,7 +243,32 @@ footer{
     padding: 2.5rem;
     background-color: #062849;
     color:#e6ecef;
+    text-align: center;
 }
 body.dark footer{
     background-color:#796779;
+}
+@media screen and (max-width:425px){
+    header{
+        grid-template-rows: auto;
+    }
+    header span{
+        margin:0;
+        grid-row: 3/4;
+        margin-top:.5em;
+        margin-bottom:.5em;
+    }
+    header img{
+        grid-row: 2/3;
+    }
+    .picture-label {
+        font-size: 20px;
+    }
+    #darkMode{
+        margin:0 auto;
+        grid-row: 1/2;
+        margin-bottom:.5em;
+    }
+
+    
 }
