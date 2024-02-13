@@ -178,6 +178,7 @@ main h1{
     font-family: 'Fraunces', sans-serif;
     font-weight: 600;
     color:#4a4a49;
+    font-size: 1.5em;
 }
 body.dark main h1{
     color:#F6F6F6;
@@ -198,6 +199,7 @@ body.dark #links{
     flex-direction: column;
     margin-left: 1.5em;
     margin-right: 1.5em;
+    font-size:18px;
 }
 body.dark #info{
     color:#4a4a49;
@@ -216,14 +218,16 @@ body.dark #info{
     text-align: center;
     color: #4a4a49;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 22px;
 }
 main ul{
     list-style-type: none;
     font-size: 18px;
     line-height: 1.8;
-    margin-left: .5em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
+
 
 li a{
     margin-left: 0.4em;
@@ -257,6 +261,7 @@ body.dark footer{
         grid-row: 3/4;
         margin-top:.5em;
         margin-bottom:.5em;
+        font-size:.7em;
     }
     header img{
         grid-row: 2/3;
@@ -268,6 +273,13 @@ body.dark footer{
         margin:0 auto;
         grid-row: 1/2;
         margin-bottom:.5em;
+    }
+
+    main ul, #info{
+        font-size: 14px;
+    }
+    .card h2{
+        font-size: 20px;
     }
 
     

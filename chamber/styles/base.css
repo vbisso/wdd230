@@ -317,7 +317,9 @@ footer{
     flex-direction: column;
     text-align: center;
     align-items: center;
+
 }
+
 footer p{
     margin: 1em;
     color:#FAF9F6;
