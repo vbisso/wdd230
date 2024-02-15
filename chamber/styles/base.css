@@ -337,8 +337,9 @@ footer p{
 }
 .sidebard p{
     text-align: center;
-    margin-top: 1em;
     font-size: 24px;
+    margin-left: .5em;
+    margin-right: .5em;
 }
 .sidebard-card {
     border: .5px solid #3d3d3a;
@@ -357,6 +358,8 @@ footer p{
     border:none;
     text-align: center;
     font-size: 24px;
+    margin-left: .5em;
+    margin-right: .5em;
 }
 .sidebard h2{
     display: block;
