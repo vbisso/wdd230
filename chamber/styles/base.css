@@ -52,14 +52,7 @@ body{
     background-color: #F2E7DC;
     color: #3d3d3a;
 }
-/*
-@media screen and (max-width:680px){
-    #hero-text{
-        top:15%;
-        width: 50%;
-    }
 
-}*/
 @media screen and (max-width:555px){
     #hero-text{
         top:15%;
@@ -326,3 +319,73 @@ footer p{
 }
 
 
+/*DISCOVER MOBILE VIEW!!!*/
+.discover-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #e9e8e68a;
+}
+#d-text{
+    display: none;
+}
+.sidebard{
+    padding-bottom: 5em;
+    width: 100%;
+}
+.sidebard p{
+    text-align: center;
+    margin-top: 1em;
+    font-size: 24px;
+}
+.sidebard-card {
+    border: .5px solid #3d3d3a;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 1.5em;
+
+}
+.sidebard-card img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#discover-visits p{
+    border:none;
+    text-align: center;
+    font-size: 24px;
+}
+.sidebard h2{
+    display: block;
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    margin-bottom: 1.5em;
+    background-color: #e9e8e6d5	;
+    color:#3d3d3a;
+    
+}
+.discover-content h3{
+    font-size: 24px;
+    text-align: center;
+    background-color: #e9e8e6d5;
+    color:#3d3d3a;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.discover-content h2{
+    display: none;
+}
+.discover-card{
+    margin: 2em;
+}
+
+.discover-card img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
