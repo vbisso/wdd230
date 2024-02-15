@@ -53,37 +53,7 @@ body{
     color: #3d3d3a;
 }
 
-@media screen and (max-width:555px){
-    #hero-text{
-        top:15%;
-        width: 50%;
-        font-size: 12px;
-    }
-}
-@media screen and (max-width:410px){
-    #hero-text{
-        top:20%;
-        width: auto;
-        flex-direction: row;
-        left: 0;
-        margin-left: 2em;
-        margin-right: 2em;
-    }
-    #join{
-        padding-left: 1.5em;
-        padding-right: 1.5em;
 
-    }
-   
-}
-@media screen and (max-width:335px){
-    #hero-text{
-        top:10%;
-        margin-left: 1.5em;
-        margin-right: 1.5em;
-    }
-   
-}
 /*NAVIGATION*/
 .new-page{
     position: fixed;
@@ -361,7 +331,9 @@ footer p{
     margin-left: .5em;
     margin-right: .5em;
 }
-.sidebard h2{
+.sidebard h1{
+    margin:0;
+    font-size:24px;
     display: block;
     text-align: center;
     padding-top: 1.5em;
@@ -380,7 +352,7 @@ footer p{
     padding-bottom: 1.5em;
 }
 
-.discover-content h2{
+.discover-content h1{
     display: none;
 }
 .discover-card{
