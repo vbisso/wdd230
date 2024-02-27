@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valeria Bisso - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="WDD 230 - Web Frontend Development - Valeria Bisso - assignment portal">
+    <title>Valeria Bisso - WDD 230 - Web Frontend Development - Form</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Valeria Bisso - Form assignment">
     <meta name="author" content="Valeria Bisso">
     <meta property="og:title" content="Valeria Bisso WDD230">
     <meta property="og:type" content="website">
@@ -40,6 +40,8 @@
 
     <main>
 
+      <h1 id="formMsg">Thank you for your visit!<br> We would love to hear from you,<br> please leave us a rating.<br>㋡</h1>
+
       <form action="record.html" method="get">
         <fieldset>
             <label>Username*<br><input id="usernameLabel" type="text" name="username" required></label>
@@ -52,7 +54,8 @@
             <input id="passwordConfirmationLabel" type="password" name="passwordConfirmation" required pattern="[a-zA-Z0-9]{8,}">
             <div id="passwordConfirmationMsg"></div>
 
-            <label>Email*<br><input id="emailLabel" type="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\\.edu$" title="Please enter a valid email address"></label>
+            <label>Email*<br></label>
+            <input id="emailLabel" type="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address">
             
             <label for="ratingLabel">Page Rating*</label>
             <div id="rangeValue">0</div>

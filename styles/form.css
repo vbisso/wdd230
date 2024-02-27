@@ -8,19 +8,37 @@
 
 
 main{
-    display: block;
-    margin-left: 1rem;
-    margin-right:1rem ;
+    margin:2rem 2rem;
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+    
 }
+#formMsg{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    margin: auto 0;
+    margin-left:2rem;
+
+}
+
 fieldset{
     border: none;
     padding: 2rem;
 }
+
 form{
     background-color:var(--white-color);
     border-radius: 10px;
     width:400px;
-    margin: 0 auto;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-left: 2rem;
+    
+    
 
 }
 label{
@@ -104,9 +122,23 @@ body.dark label,#marks,#rangeValue, #passwordReq{
 
     #marks,#submitButton,#ratingLabel{
         width: 100%;
-    }
-    
+    }    
 }
+
+@media screen and (max-width:800px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    #formMsg{
+        margin:1rem auto;
+        
+    }
+    form{
+        margin: 0 auto;
+    }
+}
+
 
 /*form confirmation msg*/
 body.dark #passwordConfirmationMsg{
