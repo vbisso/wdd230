@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valeria Bisso - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Valeria Bisso - assignment portal">
+    <meta name="author" content="Valeria Bisso">
+    <meta property="og:title" content="Valeria Bisso WDD230">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://content.r9cdn.net/rimg/dimg/9b/c5/d5c7611f-city-2270-1695897fd2f.jpg?crop=true&width=1020&height=498">
+    <meta property="og:url" content="https://vbisso.github.io/wdd230/">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;1,600&family=Fraunces:wght@600;900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="icon" href="favicon.ico">
+  </head>
+
+  <body>
+    <header>
+      <span>Valeria<br />Bisso</span>
+      <img src="images/profile.webp" alt="profile" />
+      <img id="darkMode" src="images/darkMode.svg" alt="dark mode"/>
+    </header>
+    <hr/>
+
+    <nav>
+      <button id="button"></button>
+      <ul class="menuList">
+        <li ><a  href="index.html">Home</a></li>
+        <li><a href="chamber/index.html">Chamber</a></li>
+        <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+        <li><a href="form.html" class="current-menu-item">Form</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <form action="record.html" method="get">
+        <fieldset>
+            <label>Username*<br><input id="usernameLabel" type="text" name="username" required></label>
+
+            <label for="passwordLabel">Password*</label>
+            <input id="passwordLabel" type="password" name="password" required pattern="[a-zA-Z0-9]{8,}">
+            <div id="passwordReq">Password must be at least eight (8) characters long and can only be alpha-numeric</div>
+
+            <label for="passwordConfirmationLabel">Confirm Password*</label>
+            <input id="passwordConfirmationLabel" type="password" name="passwordConfirmation" required pattern="[a-zA-Z0-9]{8,}">
+            <div id="passwordConfirmationMsg"></div>
+
+            <label>Email*<br><input id="emailLabel" type="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\\.edu$" title="Please enter a valid email address"></label>
+            
+            <label for="ratingLabel">Page Rating*</label>
+            <div id="rangeValue">0</div>
+            <input id="ratingLabel" type="range" name="rating" min="0" max="10" step="1" value="0" list="marks">
+            <datalist id="marks">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </datalist>
+
+            <input id="submitButton" type="submit" value="Rate This Page">
+
+           
+        </fieldset>
+
+    </form>
+    
+    </main>
+
+    <footer>
+      <p id="copyright"></p>
+      <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/formValidation.js"></script>
+
+  </body>
+</html>

@@ -107,10 +107,10 @@ main h1{
     display: block;
 }
 .wf1 input:required{
-    border-right:solid 8px #ea4040;
+    border-right:solid 8px rgb(234, 64, 64);
 }
 .wf1 input:required:valid{
-    border-right:solid 8px #78E08D;
+    border-right:solid 8px rgb(120, 224, 141);
 }
 
 
