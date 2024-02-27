@@ -1,0 +1,23 @@
+:root{
+    --primary-color:#9ABABA;
+}
+body{
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+}
+#logoContainer img{
+    width: 40%;
+}
+nav ul {
+display: flex;
+list-style-type: none;
+}
+
+nav ul li {
+margin-left: 20px; 
+}
