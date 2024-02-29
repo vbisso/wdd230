@@ -342,6 +342,9 @@
 
 
     /*FORM*/
+    #membershipBenefits{
+        display: none;
+    }
 
     #membershipBenefitsLarger{
         display: block;
@@ -364,10 +367,7 @@
         margin: 0;
         width: 100%;
     }
-    #membershipBenefits{
-        display: none;
-        
-    }
+    
 
 
 
@@ -394,6 +394,7 @@
         padding-right: 1.5em;
 
     }
+    
     
     
 }

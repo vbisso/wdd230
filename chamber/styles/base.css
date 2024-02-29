@@ -23,6 +23,8 @@ body {
 main h1{
     font-family: 'Playfair Display', serif;
     text-align: center;
+    padding-top: 1em;
+
 }
 
 /*HERO*/
@@ -335,7 +337,6 @@ footer p {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    background-color: #e9e8e68a;
 }
 
 #d-text {
@@ -413,9 +414,6 @@ footer p {
 }
 
 /*JOIN US*/
-#membershipBenefitsLarger{
-    display: none;
-}
 #main-form{
     padding-left:1.5rem;
     padding-right: 1.5rem;
@@ -441,7 +439,7 @@ label{
     padding-top: 1.5em;
 
 }
-input[type="text"], input[type="email"], input[type="tel"], input[type="area"],#submit{
+input[type="text"], input[type="email"], input[type="tel"], input[type="area"],#submit,textarea{
     display: block;
     border:var(--input-style);
     border-radius: 10px;
@@ -455,7 +453,7 @@ input[type="area"]{
     padding: 60px 0 60px 10px;
 }
 
-input[type="checkbox"]{
+input[type="radio"]{
     margin-left: 10px;
     margin-right: 6px;
 }
@@ -478,6 +476,9 @@ input[type="checkbox"]{
     background: linear-gradient(0deg, rgba(226,95,137,1) 0%, rgba(226,121,76,1) 100%);
 }
 
+#membershipBenefitsLarger{
+    display: none;
+}
 #membershipBenefits{
     margin-top: 1rem;
 }
@@ -492,4 +493,22 @@ input[type="checkbox"]{
 .benefits > p{
     color:var(--blue)
     
+}
+
+/*THANK YOU PAGE*/
+#main-thanyou{
+    padding:10%  5% 0 5%;
+}
+#main-thanyou p{
+    text-align: center;
+    font-size: 24px;
+}
+#main-thanyou  div{
+    height: auto;
+    margin: 5rem auto 0 auto;
+    text-align: center;
+    width: 50%;
+}
+#main-thanyou  img{
+    width: 100%;
 }

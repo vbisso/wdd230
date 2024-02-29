@@ -51,3 +51,4 @@ document.getElementById("copyright").innerHTML = `&copy;${currentYear} | Valeria
 let lastModifiedDate = document.lastModified;
 document.getElementById("lastModified").textContent = `Last Modified: ${lastModifiedDate}`;
 
+

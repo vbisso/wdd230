@@ -45,28 +45,26 @@
         
         <div id="main-form">
 
-            <form action="thanks.html" method="get">
+            <form action="thankyou.html" method="get">
                 <fieldset class="formContainer" id="memberInfo">
                     <legend>Member Information</legend>
-                    <label>First Name*<input autofocus="fname" type="text" name="firstName" required></label>
+                    <label>First Name*<input autofocus id="fname" type="text" name="firstName" required></label>
                     <label>Last Name*<input id="lname" type="text" name="lastName" required></label>
                     <label>Tile/Position<input id="title" type="text" name="title" pattern="[a-zA-Z\- ]{7,}"></label>
-                    <label>Email*<input id="email" type="email" name="email" required
-                            placeholder="youremail@gmail.com"></label>
+                    <label>Email*<input id="email" type="email" name="email" required  autocomplete="on" placeholder="youremail@gmail.com"></label>
                     <label>Phone Number*<input id="pnumber" type="tel" name="phoneNumber" required></label>
                 </fieldset>
 
                 <fieldset class="formContainer" id="businessInfo">
                     <legend>Business Information</legend>
                     <label>Business's Name*<input id="bname" type="text" name="businessName" required></label>
-                    <label>Business's Description*<input id="bdescription" type="area" name="businessDescription"></label>
+                    <label>Business's Description<textarea id="bdescription" name="businessDescription" rows="10"></textarea></label>
                 </fieldset>
 
                 <fieldset class="formContainer" id="membershipInfo">
                     <legend>Membership Information</legend>
                     <div id="membershipBenefits">
                         <div id="benefitsContainer">
-
                             <p>Membership Benefits</p>
 
                             <div class="benefits">
@@ -143,12 +141,13 @@
                                 </ul>
                             </div>
                         </div>
+                    
                     </div>
                     <p>Select your membership level:</p>
-                    <label><input id="npMembership" type="checkbox" name="NPMembership">NP Membership</label>
-                    <label><input id="npMembership" type="checkbox" name="NPMembership">Bronze Membership</label>
-                    <label><input id="npMembership" type="checkbox" name="NPMembership">Silver Membership</label>
-                    <label><input id="npMembership" type="checkbox" name="NPMembership">Gold Membership</label>
+                    <label><input id="npMembership" type="radio" name="NPMembership">NP Membership</label>
+                    <label><input id="bronzeMembership" type="radio" name="NPMembership">Bronze Membership</label>
+                    <label><input id="silverMembership" type="radio" name="NPMembership">Silver Membership</label>
+                    <label><input id="goldMembership" type="radio" name="NPMembership">Gold Membership</label>
                 </fieldset>
 
                 <input id="timeStamp" type="hidden" name="timeStamp">
