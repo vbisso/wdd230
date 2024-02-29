@@ -37,9 +37,6 @@ form{
     grid-column: 2/3;
     grid-row: 1/2;
     margin-left: 2rem;
-    
-    
-
 }
 label{
     display: block;

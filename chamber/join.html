@@ -40,31 +40,204 @@
     </header>
 
 
-    <main>
-        <form action="thanks.html" method="get">
-            <fieldset>
-                <label>First Name*<input id="fname" type="text" name="firstName" required></label>
-                <label>Last Name*<input id="lname" type="text" name="lastName" required></label>
-                <label>Tile/Position<input id="title" type="text" name="title" pattern="[a-zA-Z\- ]{7,}" ></label>
-                <label>Email*<input id="email" type="email" name="email" required placeholder="youremail@gmail.com"></label>
-                <label>Phone Number*<input id="pnumber" type="tel" name="phoneNumber" required></label>
-                <label>Business's Name*<input id="bname" type="text" name="businessName" required></label>
-                
-                <div>Membership Level</div>
-                <label><input id="npMembership" type="checkbox" name="NPMembership">NP Membership</label>
-                <label><input id="npMembership" type="checkbox" name="NPMembership">Bronze Membership</label>
-                <label><input id="npMembership" type="checkbox" name="NPMembership">Silver Membership</label>
-                <label><input id="npMembership" type="checkbox" name="NPMembership">Gold Membership</label>
+    <main >
+        <h1>Join Miami Chamber of Commerce: Be Part of Something Greater!</h1>
+        
+        <div id="main-form">
 
-                <label>Business's Description*<input id="bdescription" type="area" name="businessDescription" ></label>
-                <label>timeStamp<input id="timeStamp" type="hidden" name="timeStamp"></label>
+            <form action="thanks.html" method="get">
+                <fieldset class="formContainer" id="memberInfo">
+                    <legend>Member Information</legend>
+                    <label>First Name*<input autofocus="fname" type="text" name="firstName" required></label>
+                    <label>Last Name*<input id="lname" type="text" name="lastName" required></label>
+                    <label>Tile/Position<input id="title" type="text" name="title" pattern="[a-zA-Z\- ]{7,}"></label>
+                    <label>Email*<input id="email" type="email" name="email" required
+                            placeholder="youremail@gmail.com"></label>
+                    <label>Phone Number*<input id="pnumber" type="tel" name="phoneNumber" required></label>
+                </fieldset>
 
-                <label><input id="submit" type="submit" value="Join the Chamber"></label>
-                
+                <fieldset class="formContainer" id="businessInfo">
+                    <legend>Business Information</legend>
+                    <label>Business's Name*<input id="bname" type="text" name="businessName" required></label>
+                    <label>Business's Description*<input id="bdescription" type="area" name="businessDescription"></label>
+                </fieldset>
 
-            </fieldset>
+                <fieldset class="formContainer" id="membershipInfo">
+                    <legend>Membership Information</legend>
+                    <div id="membershipBenefits">
+                        <div id="benefitsContainer">
 
-        </form>
+                            <p>Membership Benefits</p>
+
+                            <div class="benefits">
+                                <p>NP Membership:</p>
+                                <ul>
+                                    <li>Ideal for non-profit organizations.</li>
+                                </ul>
+                                <ul>
+                                    <li>No membership fee required.</li>
+                                </ul>
+                                <ul>
+                                    <li>Access to essential resources and networking opportunities.</li>
+                                </ul>
+                                <ul>
+                                    <li>Tailored support for the specific needs of non-profit entities.</li>
+                                </ul>
+                            </div>
+
+                            <div class="benefits">
+                                <p>Bronze Membership:</p>
+                                <ul>
+                                    <li>Entry-level membership tier.</li>
+                                </ul>
+                                <ul>
+                                    <li>Affordable membership fee.</li>
+                                </ul>
+                                <ul>
+                                    <li>Basic benefits such as access to events and limited promotional opportunities.</li>
+                                </ul>
+                                <ul>
+                                    <li>Suitable for small businesses or startups looking to establish a presence within the
+                                        community.</li>
+                                </ul>
+                            </div>
+
+                            <div class="benefits">
+                                <p> Silver Membership:</p>
+                                <ul>
+                                    <li>Mid-tier membership option.</li>
+                                </ul>
+                                <ul>
+                                    <li>Moderate membership fee with increased benefits.</li>
+                                </ul>
+                                <ul>
+                                    <li>Enhanced networking opportunities with industry leaders.</li>
+                                </ul>
+                                <ul>
+                                    <li>Additional perks such as discounted event tickets, advertising placements, and
+                                        exclusive training sessions.</li>
+                                </ul>
+                            </div>
+
+
+
+
+
+
+                            <div class="benefits">
+                                <p>Gold Membership:</p>
+                                <ul>
+                                    <li>Premium membership level offering top-tier benefits.</li>
+                                </ul>
+                                <ul>
+                                    <li>Higher membership fee justified by extensive perks.</li>
+                                </ul>
+                                <ul>
+                                    <li> Prominent visibility through featured advertising spots on the organization's
+                                        website and promotional materials. </li>
+                                </ul>
+                                <ul>
+                                    <li> Personalized support from Chamber of Commerce staff for business growth and
+                                        development strategies.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Select your membership level:</p>
+                    <label><input id="npMembership" type="checkbox" name="NPMembership">NP Membership</label>
+                    <label><input id="npMembership" type="checkbox" name="NPMembership">Bronze Membership</label>
+                    <label><input id="npMembership" type="checkbox" name="NPMembership">Silver Membership</label>
+                    <label><input id="npMembership" type="checkbox" name="NPMembership">Gold Membership</label>
+                </fieldset>
+
+                <input id="timeStamp" type="hidden" name="timeStamp">
+                <input id="submit" type="submit" value="Join the Chamber">
+
+            </form>
+            <div id="membershipBenefitsLarger">
+                <div id="benefitsContainer">
+
+                    <p>Membership Benefits</p>
+
+                    <div class="benefits">
+                        <p>NP Membership:</p>
+                        <ul>
+                            <li>Ideal for non-profit organizations.</li>
+                        </ul>
+                        <ul>
+                            <li>No membership fee required.</li>
+                        </ul>
+                        <ul>
+                            <li>Access to essential resources and networking opportunities.</li>
+                        </ul>
+                        <ul>
+                            <li>Tailored support for the specific needs of non-profit entities.</li>
+                        </ul>
+                    </div>
+
+                    <div class="benefits">
+                        <p>Bronze Membership:</p>
+                        <ul>
+                            <li>Entry-level membership tier.</li>
+                        </ul>
+                        <ul>
+                            <li>Affordable membership fee.</li>
+                        </ul>
+                        <ul>
+                            <li>Basic benefits such as access to events and limited promotional opportunities.</li>
+                        </ul>
+                        <ul>
+                            <li>Suitable for small businesses or startups looking to establish a presence within the
+                                community.</li>
+                        </ul>
+                    </div>
+
+                    <div class="benefits">
+                        <p> Silver Membership:</p>
+                        <ul>
+                            <li>Mid-tier membership option.</li>
+                        </ul>
+                        <ul>
+                            <li>Moderate membership fee with increased benefits.</li>
+                        </ul>
+                        <ul>
+                            <li>Enhanced networking opportunities with industry leaders.</li>
+                        </ul>
+                        <ul>
+                            <li>Additional perks such as discounted event tickets, advertising placements, and
+                                exclusive training sessions.</li>
+                        </ul>
+                    </div>
+
+
+
+
+
+
+                    <div class="benefits">
+                        <p>Gold Membership:</p>
+                        <ul>
+                            <li>Premium membership level offering top-tier benefits.</li>
+                        </ul>
+                        <ul>
+                            <li>Higher membership fee justified by extensive perks.</li>
+                        </ul>
+                        <ul>
+                            <li> Prominent visibility through featured advertising spots on the organization's
+                                website and promotional materials. </li>
+                        </ul>
+                        <ul>
+                            <li> Personalized support from Chamber of Commerce staff for business growth and
+                                development strategies.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+
 
 
 
