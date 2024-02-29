@@ -485,7 +485,7 @@ input[type="radio"]{
 .benefits{
     margin-top: 1rem;
 }
-#benefitsContainer{
+.benefitsContainer{
     background-color: var(--grey-bg);
     border-radius: 15px;
     padding: 1rem;
