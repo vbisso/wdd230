@@ -1,0 +1,25 @@
+{
+    "familyName":"New Name",
+    "moveInDate":"2020-01-01",
+    "numberOfRecords":3,
+    "bishopVisit":true,
+    "records":[
+
+        {
+            "firstName":"John",
+            "lastName":"Doe",
+            "birthDate":"2020-01-01"
+        },
+        {
+            "firstName":"Jane",
+            "lastName":"Doe",
+            "birthDate":"2021-01-01"
+        },
+        {
+            "firstName":"Josh",
+            "lastName":"Doe",
+            "birthDate":"2022-01-01"
+        }
+    ]
+
+}
