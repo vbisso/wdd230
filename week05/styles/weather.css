@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+    margin: 0;
+
+}
+h1{
+    margin:2em 0 2em 0;
+}
+main p{
+    font-size: 1.5em;
+}
+#current-temp{
+    font-size: 1.5em;
+    color:#4C61FF
+}
+figcaption{
+    font-size: 1.5em;
+}
+footer{
+    background-color: #4C61FF;
+    color:white;
+    padding:1em 0 1em 0;
+    position:fixed;
+    bottom:0;
+    width:100%;
+}
