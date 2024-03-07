@@ -200,6 +200,7 @@ body.dark #links{
     margin-left: 1.5em;
     margin-right: 1.5em;
     font-size:18px;
+    padding-bottom: 1em;
 }
 body.dark #info{
     color:#4a4a49;
