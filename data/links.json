@@ -1,0 +1,97 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "https://codepen.io/vbisso/pen/MWxmyXv",
+                    "title": "Holy Grail Acitivity"
+                },
+                {
+                    "url": "https://codepen.io/vbisso/pen/abMWNjj",
+                    "title": "Media Query"
+                },
+                {
+                    "url": "https://codepen.io/vbisso/pen/PoLGXeq",
+                    "title": "JS Pen"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "https://vbisso.github.io/wdd230/week02/design.html",
+                    "title": "Design Principles"
+                },
+                {
+                    "url": "https://codepen.io/vbisso/pen/WNmEyJV",
+                    "title": "Responsive Menu"
+                },
+                {
+                    "url": "https://vbisso.github.io/wdd230/week02/bom.html",
+                    "title": "DOM Manipulation"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "https://vbisso.github.io/wdd230/week03/images/landscape.webp",
+                    "title": "WebP Format"
+                },
+                {
+                    "url": "https://vbisso.github.io/wdd230/week03/lazyload.htm",
+                    "title": "Lazy Loading"
+                },
+                {
+                    "url": "https://vbisso.github.io/wdd230/week03/responsive-images.html",
+                    "title": "Responsive Images"
+                },
+                {
+                    "url": "https://vbisso.github.io/wdd230/week03/bom.html",
+                    "title": "Web Storage API"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "https://codepen.io/vbisso/pen/XWGQxEq",
+                    "title": "CSS Pseudo-Classes"
+                },
+                {
+                    "url": "https://vbisso.github.io/wdd230/week04/tablebuild.html",
+                    "title": "HTML Tables"
+                },
+                {
+                    "url": "https://vbisso.github.io/wdd230/week04/index.html",
+                    "title": "HTML Forms"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "https://codepen.io/vbisso/pen/OJGVWRE",
+                    "title": "CSS Pseudo-elements"
+                },
+                {
+                    "url": "https://vbisso.github.io/wdd230/week05/new-ward-members.json",
+                    "title": "JSON File"
+                },
+                {
+                    "url": "https://vbisso.github.io/wdd230/week05/prophets.html",
+                    "title": "Latter-day Prophets"
+                },
+                {
+                    "url": "https://vbisso.github.io/wdd230/week05/weather.html",
+                    "title": "Weather API"
+                }
+            ]
+        }
+    ]
+}
