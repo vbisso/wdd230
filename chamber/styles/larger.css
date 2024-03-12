@@ -329,6 +329,17 @@
         width: 100%;
     }
     
+    /*directory*/
+    .list section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 2fr;
+        margin: 0;
+        width: 95%;
+        max-width: 1000px;
+    }
+    .list section > * {
+        padding: 10px; 
+    }
 
 
 

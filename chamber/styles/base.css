@@ -1,6 +1,7 @@
 :root {
     --white: #F6F6F6;
     --dark: #3d3d3a;
+    --dark-faded: #3d3d3a32;
     --cream: #f2e7dcb2;
     --cream-bg:#F1F0EE;
     --grey-bg:#EBEAE6;
@@ -297,7 +298,7 @@ header {
 
 
 footer {
-    background-color: #4F4929;
+    background-color: var(--dark);
     padding: 3em;
     display: flex;
     flex-direction: column;
@@ -493,4 +494,112 @@ input[type="radio"]{
 }
 #main-thanyou  img{
     width: 100%;
+}
+/*DIRECTORY*/
+article{
+    margin: 2em 1em 2em 1em;
+}
+.card img{
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+article.grid section.card:nth-child(5) img{
+    height: 130px;
+    margin-bottom: 20px;
+}
+article.grid section.card:nth-child(4) img{
+    width: auto;
+    height: 140px;
+}
+article.grid section.card:nth-child(7) img{
+    width: auto;
+    height: 140px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding:20px;
+    background-color: var(--white);
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+}
+.grid .card{
+    box-shadow:var(--dark) 1px 2px 3px -1px;
+    border: .5px solid #3d3d3a75;
+}
+.grid .name{
+    display: none;
+}
+#gridBtn,#listBtn{
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+    border:.5px solid var(--dark);
+}
+#gridBtn:hover,#listBtn:hover{
+    background-color: var(--dark-faded);
+}
+#gridBtn:active,#gridBtn:focus,#listBtn:active,#listBtn:focus{
+    background-color: var(--dark-faded);
+}
+#gridBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+#listBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+
+}
+#viewBtns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list img{
+    display: none;
+}
+.list section{
+    display: block;
+    width: 90%;
+    margin: 0;
+    border-left: 1px solid var(--dark);
+    border-right: 1px solid var(--dark);
+}
+.list section:first-child{
+    border-top: 1px solid var(--dark);
+}
+.list section:last-child{
+    border-bottom: 1px solid var(--dark);
+}
+
+.list section > * {
+    margin: 0;
+    padding: 5px; 
+    text-align: left;
+}
+
+.list section:nth-child(odd){
+    color:var(--white);
+    background-color: var(--blue);
 }
