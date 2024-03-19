@@ -51,3 +51,4 @@ listBtn.addEventListener('click', ()=>{
     article.classList.add('list');
 
 })
+

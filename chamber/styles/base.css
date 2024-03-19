@@ -216,7 +216,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin-top: 1em;
+    margin-top: 2em;
     padding: 2em;
     background: radial-gradient(circle, rgba(252, 176, 69, 1) 0%, rgba(242, 231, 220, 1) 100%);
 }
@@ -256,6 +256,18 @@ header {
     font-family: 'Playfair Display', serif;
     padding-top: 1.5em;
     margin-bottom: 2em;
+}
+.comp-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.comp-card img{
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
 }
 
 #comp-container {
@@ -602,4 +614,29 @@ article.grid section.card:nth-child(7) img{
 .list section:nth-child(odd){
     color:var(--white);
     background-color: var(--blue);
+}
+#weather-forecast{
+    width: 100%;
+    max-width: 430px;
+    font-size: 22px;
+    margin-top:1em;
+    
+}
+#weather-forecast h4{
+    margin-bottom: 1.5em;
+}
+.forecast-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+    text-align: right;
+}
+@media screen and (max-width:400px){
+    .forecast-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }

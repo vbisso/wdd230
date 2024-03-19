@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,21 @@
     <meta name="author" content="Valeria Bisso">
     <meta property="og:title" content="Valeria Bisso">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://images.squarespace-cdn.com/content/v1/593bec9a6a4963cde6b14251/1581798157623-XLFPI5983WJIKQ6MHG7D/miami+beach+travel+blog+weekend+in+miami+travel+guide+blog?format=2500w">
+    <meta property="og:image"
+        content="https://images.squarespace-cdn.com/content/v1/593bec9a6a4963cde6b14251/1581798157623-XLFPI5983WJIKQ6MHG7D/miami+beach+travel+blog+weekend+in+miami+travel+guide+blog?format=2500w">
     <meta property="og:url" content="https://vbisso.github.io/wdd230/chamber/index.html">
     <title>Home Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:wght@500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
     <link rel="icon" href="favicon.ico">
 </head>
+
 <body>
 
     <header><!--inside the header include the nav tab and logo-->
@@ -40,18 +45,18 @@
             <source srcset="images/small.webp" media="(max-width : 410px)">
             <source srcset="images/medium.webp" media="(max-width : 555px)">
             <img id="hero-img" src="images/large.webp" alt="hero image" loading="lazy" width="1174" height="660">
-        </picture> 
-        
+        </picture>
+
         <div id="hero-text">
-            
-            <h1>Miami<br> Chamber of Commerce</h1>  
-             
+
+            <h1>Miami<br> Chamber of Commerce</h1>
+
             <div id="join-container">
                 <button id="join">Join Now</button>
-            </div>        
+            </div>
         </div>
-        
-    
+
+
     </div>
 
     <main>
@@ -74,12 +79,12 @@
                     </div>
                 </div>
                 <div id="event3" class="event-card">
-                    <img src="images/event3.webp" alt="event image 3"   >
+                    <img src="images/event3.webp" alt="event image 3">
                     <div class="event-details">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <p>February 5th | 9:30 a.m.</p>
                     </div>
-                </div> 
+                </div>
                 <div id="event4" class="event-card">
                     <img src="images/event4.webp" alt="event image 4">
                     <div class="event-details">
@@ -98,8 +103,28 @@
                     <p><span id="weather-temp"></span></p>
                 </div>
                 <div id="weather-icon">
-                    <img id ="weather-icon-img">
+                    <img id="weather-icon-img">
                 </div>
+                <div id="weather-forecast">
+                    <h4>3-Day Forecast</h4>
+                    <div class="forecast-container">
+                        <p id="weather-date-p1"> </p>
+                        <p><span id="weather-temp1">90.02° F - scattered clouds</span></p>
+                    </div>
+                    
+                    <div class="forecast-container">
+                        <p id="weather-date-p2"></p>
+                        <p><span id="weather-temp2">20.8° F - broken clouds</span></p>
+                    </div>
+                    
+                    <div class="forecast-container">
+                        <p id="weather-date-p3"></p>
+                        <p><span id="weather-temp3">88.51° F - light rain</span></p>
+                    </div>
+                    
+
+                </div>
+            </div>
 
 
         </section>
@@ -111,54 +136,20 @@
             <h2>Exploring Success Stories:</h2>
 
             <div id="comp-container">
+
                 <div id="comp1" class="comp-card">
-                    <div class="comp-img-container">
-                        <img class="comp-img" src="images/apple.webp" alt="apple">
-                    </div>
-                    <div id="comp-text1" class="comp-text">
-                        <p>Lorem ipsum dolor</p>
-                        <p>"Lorem, ipsum dolor sit amet consectetur."</p>
-                        <p>Lorem Ipsum</p>
-                        <p>Lorem Ipsum</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
                 </div>
+
                 <div id="comp2" class="comp-card">
-                    <div class="comp-img-container">
-                        <img class="comp-img" src="images/ibm.webp" alt="ibm">
-
-                    </div>
-                    
-                    
-                    <div id="comp-text2" class="comp-text">
-                        <p>Lorem ipsum dolor</p>
-                        <p>"Lorem, ipsum dolor sit amet consectetur."</p>
-                        <p>Lorem Ipsum</p>
-                        <p>Lorem Ipsum</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-    
                 </div>
+
                 <div id="comp3" class="comp-card">
-
-                    <div class="comp-img-container">
-                        <img class="comp-img" src="images/github.webp" alt="github">
-                    </div>
-       
-
-                    <div id="comp-text3" class="comp-text">
-                        <p>Lorem ipsum dolor</p>
-                        <p>"Lorem, ipsum dolor sit amet consectetur."</p>
-                        <p>Lorem Ipsum</p>
-                        <p>Lorem Ipsum</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
                 </div>
 
 
             </div>
 
-            
+
 
         </section>
 
@@ -168,7 +159,7 @@
     <footer>
         <p id="copyright"></p>
         <p id="lastModified"></p>
-      </footer>
+    </footer>
 
 
 
@@ -177,8 +168,9 @@
 
 
 
-        
+    <script src="scripts/spotlight.js"></script>
     <script src="scripts/scripts.js"></script>
     <script src="scripts/weatherAPI.js"></script>
-</body> 
+</body>
+
 </html>
