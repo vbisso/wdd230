@@ -1,4 +1,5 @@
-const url = 'https://raw.githubusercontent.com/vbisso/wdd230/master/chamber/data/members.json';
+//const url = 'https://raw.githubusercontent.com/vbisso/wdd230/master/chamber/data/members.json';
+const url = '../chamber/data/members.json';
 const compimg1 = document.querySelector('#compImg1');
 const comptext1 = document.querySelector('#compText1');
 const compimg2 = document.querySelector('#compImg2');
@@ -23,27 +24,26 @@ function displayMembers(data) {
         }
     }
 
-    console.log(list);
 
     let randomIndex1 = Math.floor(Math.random() * list.length);
     let randomIndex2 = Math.floor(Math.random() * list.length);
     let randomIndex3 = Math.floor(Math.random() * list.length);
 
-    compimg1.innerHTML = `<img src="${list[randomIndex1].image}" alt="${list[randomIndex1].name}">`;
+    compimg1.innerHTML = `<img src="${list[randomIndex1].image}" alt="${list[randomIndex1].name}" loading="lazy">`;
     comptext1.innerHTML = `
     <p>${list[randomIndex1].name}</p>
         <p>${list[randomIndex1].address}</p>
         <p>${list[randomIndex1].phone}</p>
         <p>${list[randomIndex1].website}</p>`
 
-    compimg2.innerHTML = `<img src="${list[randomIndex2].image}" alt="${list[randomIndex2].name}">`;
+    compimg2.innerHTML = `<img src="${list[randomIndex2].image}" alt="${list[randomIndex2].name}" loading="lazy">`;
     comptext2.innerHTML = `
         <p>${list[randomIndex2].name}</p>
             <p>${list[randomIndex2].address}</p>
             <p>${list[randomIndex2].phone}</p>
             <p>${list[randomIndex2].website}</p>`
 
-    compimg3.innerHTML = `<img src="${list[randomIndex3].image}" alt="${list[randomIndex3].name}">`;
+    compimg3.innerHTML = `<img src="${list[randomIndex3].image}" alt="${list[randomIndex3].name}" loading="lazy">`;
     comptext3.innerHTML = `
     <p>${list[randomIndex3].name}</p>
         <p>${list[randomIndex3].address}</p>
@@ -53,3 +53,5 @@ function displayMembers(data) {
 
 }
 getMembers();
+
+

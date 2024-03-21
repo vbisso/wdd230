@@ -55,11 +55,11 @@
       "other_info": "Provides software development services."
     },
     {
-      "name": "Apple",
+      "name": "X",
       "address": "147 Walnut St, Miami, United States",
       "phone": "+159 264 8370",
-      "website": "https://www.apple.com/",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+      "website": "https://twitter.com/X?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "image": "https://cdn.icon-icons.com/icons2/4029/PNG/512/twitter_x_new_logo_x_rounded_icon_256078.png",
       "membership_level": "Silver",
       "other_info": "Specializes in entertainment."
     },
@@ -77,7 +77,7 @@
       "address": "369 Birch St, Miami, United States",
       "phone": "+741 852 9630",
       "website": "https://avatar.fandom.com/es/wiki/Avatar:_La_Leyenda_de_Aang",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Logo_de_Avatar_la_leyenda_de_Aang.png",
+      "image": "https://i.pinimg.com/564x/cc/61/e2/cc61e24d5fcefb9cbfd049f8dca85e57.jpg",
       "membership_level": "Silver",
       "other_info": "Specializes in entertainment."
     }

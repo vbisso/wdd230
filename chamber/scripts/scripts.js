@@ -52,3 +52,15 @@ let lastModifiedDate = document.lastModified;
 document.getElementById("lastModified").textContent = `Last Modified: ${lastModifiedDate}`;
 
 
+//BANNER
+const closeBtn = document.querySelector('.close-btn');
+const banner = document.querySelector('#banner');
+closeBtn.addEventListener('click', () => {
+    banner.style.display = 'none';
+})
+
+let dayOfWeek = currentDate.getDay(); // 0 (Sunday) to 6 (Saturday)
+
+if (dayOfWeek >= 1 && dayOfWeek <= 3) { // Monday, Tuesday, Wednesday
+    document.getElementById("banner").style.display = "block";
+}

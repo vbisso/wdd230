@@ -28,6 +28,30 @@ main h1{
 
 }
 
+/*BANNER*/
+#banner{
+    background: linear-gradient(0deg, rgba(226,95,137,1) 0%, rgba(226,121,76,1) 100%);
+    padding: 1rem 1.3rem 1rem 1.3rem ;
+    color: var(--white);
+    text-align: center;
+    font-size: 1.1em;
+    display: none;
+}
+
+.close-btn{
+    position: absolute;
+    right: 5px;
+    top:5px;
+    cursor: pointer;
+    font-size: 0.8em;
+    border: none;
+    background: none;
+    color: var(--white);
+    
+}
+
+
+
 /*HERO*/
 #hero {
     position: relative;
