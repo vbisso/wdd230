@@ -1,68 +1,85 @@
 {
-    "companies": [
+  "companies": [
+    {
+      "name": "ACR Tech",
+      "address": "123 Main St, Miami, United States",
+      "phone": "+123 456 7890",
+      "website": "https://acrtech.ca/",
+      "image": "https://media.designrush.com/inspirations/543787/conversions/acr-tech-logo-design-preview.jpg",
+      "membership_level": "Gold",
+      "other_info": "Specializes in tech products."
+    },
+    {
+      "name": "Allen Developers",
+      "address": "456 Elm St, Miami, United States",
+      "phone": "+098 765 4321",
+      "website": "https://allendevelopers.com/",
+      "image": "https://allendevelopers.com/wp-content/uploads/2022/08/Final-Logo400x300.png",
+      "membership_level": "Silver",
+      "other_info": "Provides technology services."
+    },
+    {
+      "name": "Nestle",
+      "address": "789 Oak St, Miami, United States",
+      "phone": "+135 792 4680",
+      "website": "https://www.nestle.com/",
+      "image": "https://cdn.shopify.com/s/files/1/0558/6413/1764/files/Nestle_Logo_Design_History_Evolution_0_1024x1024.jpg?v=1693494961",
+      "membership_level": "Bronze",
+      "other_info": "Manufactures consumer goods."
+    },
+    {
+      "name": "American Express",
+      "address": "321 Maple St, Miami, United States",
+      "phone": "+246 813 5790",
+      "website": "https://www.americanexpress.com/",
+      "image": "https://www.svgrepo.com/show/266068/american-express.svg",
+      "membership_level": "Bronze",
+      "other_info": "Offers financial services."
+    },
+    {
+      "name": "Anderson Collaborative",
+      "address": "654 Pine St, Miami, United States",
+      "phone": "+369 258 1470",
+      "website": "https://www.andersoncollaborative.com/",
+      "image": "https://www.andersoncollaborative.com/wp-content/uploads/2023/04/logo-full-colored-tm-5.svg",
+      "membership_level": "Gold",
+      "other_info": "Specializes in marketing solutions."
+    },
+    {
+      "name": "salesforce",
+      "address": "987 Cedar St, Miami, United States",
+      "phone": "+753 951 4862",
+      "website": "https://www.salesforce.com/",
+      "image": "https://a.sfdcstatic.com/shared/images/c360-nav/salesforce-with-type-logo.svg",
+      "membership_level": "Silver",
+      "other_info": "Provides software development services."
+    },
+    {
+      "name": "Apple",
+      "address": "147 Walnut St, Miami, United States",
+      "phone": "+159 264 8370",
+      "website": "https://www.apple.com/",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+      "membership_level": "Silver",
+      "other_info": "Specializes in entertainment."
+    }
       {
-        "name": "ACR Tech",
-        "address": "123 Main St, Miami, United States",
-        "phone": "+123 456 7890",
-        "website": "https://acrtech.ca/",
-        "image": "https://media.designrush.com/inspirations/543787/conversions/acr-tech-logo-design-preview.jpg",
-        "membership_level": "Gold",
-        "other_info": "Specializes in tech products."
-      },
-      {
-        "name": "Allen Developers",
-        "address": "456 Elm St, Miami, United States",
-        "phone": "+098 765 4321",
-        "website": "https://allendevelopers.com/",
-        "image": "https://allendevelopers.com/wp-content/uploads/2022/08/Final-Logo400x300.png",
-        "membership_level": "Silver",
-        "other_info": "Provides technology services."
-      },
-      {
-        "name": "Nestle",
-        "address": "789 Oak St, Miami, United States",
-        "phone": "+135 792 4680",
-        "website": "https://www.nestle.com/",
-        "image": "https://cdn.shopify.com/s/files/1/0558/6413/1764/files/Nestle_Logo_Design_History_Evolution_0_1024x1024.jpg?v=1693494961",
-        "membership_level": "Bronze",
-        "other_info": "Manufactures consumer goods."
-      },
-      {
-        "name": "American Express",
-        "address": "321 Maple St, Miami, United States",
-        "phone": "+246 813 5790",
-        "website": "https://www.americanexpress.com/",
-        "image": "https://www.svgrepo.com/show/266068/american-express.svg",
-        "membership_level": "Gold",
-        "other_info": "Offers financial services."
-      },
-      {
-        "name": "Anderson Collaborative",
-        "address": "654 Pine St, Miami, United States",
-        "phone": "+369 258 1470",
-        "website": "https://www.andersoncollaborative.com/",
-        "image": "https://www.andersoncollaborative.com/wp-content/uploads/2023/04/logo-full-colored-tm-5.svg",
-        "membership_level": "Gold",
-        "other_info": "Specializes in marketing solutions."
-      },
-      {
-        "name": "salesforce",
-        "address": "987 Cedar St, Miami, United States",
-        "phone": "+753 951 4862",
-        "website": "https://www.salesforce.com/",
-        "image": "https://a.sfdcstatic.com/shared/images/c360-nav/salesforce-with-type-logo.svg",
-        "membership_level": "Silver",
-        "other_info": "Provides software development services."
-      },
-      {
-        "name": "Apple",
-        "address": "147 Walnut St, Miami, United States",
-        "phone": "+159 264 8370",
-        "website": "https://www.apple.com/",
-        "image": "https://pngfre.com/wp-content/uploads/apple-logo-22-1024x1024.png",
-        "membership_level": "Silver",
-        "other_info": "Specializes in entertainment."
-      }
-    ]
-  }
-  
+      "name": "Microsoft",
+      "address": "258 Cherry St, Miami, United States",
+      "phone": "+852 369 1470",
+      "website": "https://www.microsoft.com/",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg",
+      "membership_level": "Gold",
+      "other_info": "Provides software and hardware products and services."
+    },
+    {
+      "name": "ATLA",
+      "address": "369 Birch St, Miami, United States",
+      "phone": "+741 852 9630",
+      "website": "https://avatar.fandom.com/es/wiki/Avatar:_La_Leyenda_de_Aang",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Logo_de_Avatar_la_leyenda_de_Aang.png",
+      "membership_level": "Silver",
+      "other_info": "Specializes in entertainment."
+    }
+  ]
+}
