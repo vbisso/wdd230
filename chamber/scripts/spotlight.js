@@ -23,30 +23,32 @@ function displayMembers(data) {
         }
     }
 
+    console.log(list);
+
     let randomIndex1 = Math.floor(Math.random() * list.length);
     let randomIndex2 = Math.floor(Math.random() * list.length);
     let randomIndex3 = Math.floor(Math.random() * list.length);
 
-    compimg1.innerHTML = `<img src="${data.companies[randomIndex1].image}" alt="${data.companies[randomIndex1].name}">`;
+    compimg1.innerHTML = `<img src="${list[randomIndex1].image}" alt="${list[randomIndex1].name}">`;
     comptext1.innerHTML = `
-    <p>${data.companies[randomIndex1].name}</p>
-        <p>${data.companies[randomIndex1].address}</p>
-        <p>${data.companies[randomIndex1].phone}</p>
-        <p>${data.companies[randomIndex1].website}</p>`
+    <p>${list[randomIndex1].name}</p>
+        <p>${list[randomIndex1].address}</p>
+        <p>${list[randomIndex1].phone}</p>
+        <p>${list[randomIndex1].website}</p>`
 
-    compimg2.innerHTML = `<img src="${data.companies[randomIndex2].image}" alt="${data.companies[randomIndex2].name}">`;
+    compimg2.innerHTML = `<img src="${list[randomIndex2].image}" alt="${list[randomIndex2].name}">`;
     comptext2.innerHTML = `
-        <p>${data.companies[randomIndex2].name}</p>
-            <p>${data.companies[randomIndex2].address}</p>
-            <p>${data.companies[randomIndex2].phone}</p>
-            <p>${data.companies[randomIndex2].website}</p>`
+        <p>${list[randomIndex2].name}</p>
+            <p>${list[randomIndex2].address}</p>
+            <p>${list[randomIndex2].phone}</p>
+            <p>${list[randomIndex2].website}</p>`
 
-    compimg3.innerHTML = `<img src="${data.companies[randomIndex3].image}" alt="${data.companies[randomIndex3].name}">`;
+    compimg3.innerHTML = `<img src="${list[randomIndex3].image}" alt="${list[randomIndex3].name}">`;
     comptext3.innerHTML = `
-    <p>${data.companies[randomIndex3].name}</p>
-        <p>${data.companies[randomIndex3].address}</p>
-        <p>${data.companies[randomIndex3].phone}</p>
-        <p>${data.companies[randomIndex3].website}</p>`
+    <p>${list[randomIndex3].name}</p>
+        <p>${list[randomIndex3].address}</p>
+        <p>${list[randomIndex3].phone}</p>
+        <p>${list[randomIndex3].website}</p>`
 
 
 }
