@@ -1,5 +1,6 @@
 //MEMBERS JSON
-const url = 'https://raw.githubusercontent.com/vbisso/wdd230/master/chamber/data/members.json';
+//const url = 'https://raw.githubusercontent.com/vbisso/wdd230/master/chamber/data/members.json';
+const url = '../chamber/data/members.json';
 const article = document.querySelector('article');
 async function getMembers(){
     const response = await fetch(url);
@@ -15,8 +16,10 @@ function displayMembers(data){
         const name = document.createElement('h3');
         const address = document.createElement('p');
         const phone = document.createElement('p');
-        const website = document.createElement('p');
+        const website = document.createElement('a');
+        website.setAttribute('href', member.website);
         const image = document.createElement('img');
+        const membershipLevel = document.createElement('p');
 
         name.textContent = member.name;
         name.setAttribute('class', 'name');
@@ -26,8 +29,11 @@ function displayMembers(data){
         website.setAttribute('class', 'website');
         image.setAttribute('src', member.image);
         image.setAttribute('alt', member.name);
+        membershipLevel.textContent = `${member.membership_level} Member`;
+        membershipLevel.setAttribute('class', 'membershipLevel');
         card.appendChild(name);
         card.appendChild(image);
+        card.appendChild(membershipLevel);
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(website);

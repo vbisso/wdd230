@@ -41,8 +41,8 @@ date3.textContent = next3DayFormatted;
 //0fd9156e83d87c74cc229489054f52be API KEY
 
 
-const urlWeather = 'https://api.openweathermap.org/data/2.5/weather?lat=25.762288118958942&lon=-80.18792049814361&appid=0fd9156e83d87c74cc229489054f52be&units=imperial';
-const urlForecast = 'https://api.openweathermap.org/data/2.5/forecast?lat=25.762288118958942&lon=-80.18792049814361&appid=0fd9156e83d87c74cc229489054f52be&units=imperial';
+//const urlWeather = 'https://api.openweathermap.org/data/2.5/weather?lat=25.762288118958942&lon=-80.18792049814361&appid=0fd9156e83d87c74cc229489054f52be&units=imperial';
+//const urlForecast = 'https://api.openweathermap.org/data/2.5/forecast?lat=25.762288118958942&lon=-80.18792049814361&appid=0fd9156e83d87c74cc229489054f52be&units=imperial';
 
 async function getWeatherData() {
     const response = await fetch(urlWeather);

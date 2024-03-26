@@ -9,6 +9,7 @@
     --orange: #E2794C;
     --pink: #E25F89;
     --blue: #7E98A1;
+    --light-blue:#b6c7cdac;
     --input-style: .8px solid #3d3d3a75;
 }
 
@@ -31,12 +32,14 @@ main h1{
 /*BANNER*/
 #banner{
     background: linear-gradient(0deg, rgba(226,95,137,1) 0%, rgba(226,121,76,1) 100%);
-    padding: 1rem 1.3rem 1rem 1.3rem ;
+    padding: 1.2rem 1.3rem 1.2rem 1.3rem ;
     color: var(--white);
     text-align: center;
     font-size: 1.1em;
     display: none;
+    
 }
+
 
 .close-btn{
     position: absolute;
@@ -66,25 +69,26 @@ main h1{
 #hero-text {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     position: absolute;
     left: 5%;
-    top: 50%;
-    bottom: 50%;
-    width: 60%;
+    top:10px;
+    height: 90%;
+
 }
 
 #hero-text h1 {
     font-family: 'Playfair Display', serif;
     color: #FAF9F6;
-    font-size: 2.5em;
+    font-size: 2.2em;
+    margin:0 0 0.5rem 0;
     text-align: left;
-    margin:0 0 1rem 0;
+    text-shadow: #626262 0 2.2px 0px;
 }
 
 /*JOIN BUTTON*/
 #join-container {
-    text-align: left;
+    margin:0;
 }
 
 #join {
@@ -96,13 +100,15 @@ main h1{
     border: 0;
     border-radius: 5px;
     color: #FFFFFF;
-    background-color: #E2794C;
+    background-color: var(--orange);
     cursor: pointer;
+    box-shadow: 0 2.2px 0px 0 #a85836;
 }
 
 #join:hover {
     background-color: #F2E7DC;
     color: #3d3d3a;
+    box-shadow: 0 2.2px 0px 0 #afa69f;
 }
 
 
@@ -203,8 +209,8 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
+
 
 .event-card {
     position: relative;
@@ -228,11 +234,18 @@ header {
     position: absolute;
     bottom: 3.2px;
     width: 100%;
+    height: 115px;
     background: #faf9f6df;
     padding: 1em;
     box-sizing: border-box;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 
 #weather-container {
@@ -243,6 +256,7 @@ header {
     margin-top: 2em;
     padding: 2em;
     background: radial-gradient(circle, rgba(252, 176, 69, 1) 0%, rgba(242, 231, 220, 1) 100%);
+    box-shadow: 0 2px 5px 0  rgb(221, 195, 169);
 }
 #weather-container > *{
     margin-bottom: 1.5em;
@@ -293,6 +307,7 @@ header {
 .comp-card{
     border: none;
     background-color: #dae9ee9c;
+    box-shadow: 5px 2px 0px 0 #c3d1d59c;
     border-radius: 10px;
     padding: 1em;
     margin: 0.5rem 0 0.5rem 0;
@@ -533,54 +548,6 @@ input[type="radio"]{
 article{
     margin: 2em 1em 2em 1em;
 }
-.card img{
-    width: 200px;
-    height: auto;
-    display: block;
-    margin-bottom: 15px;
-}
-article.grid section.card:nth-child(5) img{
-    height: 130px;
-    margin-bottom: 20px;
-}
-article.grid section.card:nth-child(4) img{
-    width: auto;
-    height: 140px;
-}
-article.grid section.card:nth-child(7) img{
-    width: auto;
-    height: 140px;
-}
-
-.card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    padding:20px;
-    background-color: var(--white);
-    text-align: center;
-    
-}
-.card p{
-    max-width: 95%;
-    word-wrap: break-word;
-
-}
-
-.grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 10px;
-}
-.grid .card{
-    box-shadow:var(--dark) 1px 2px 3px -1px;
-    border: .5px solid #3d3d3a75;
-}
-.grid .name{
-    display: none;
-}
 #gridBtn,#listBtn{
     display: block;
     cursor: pointer;
@@ -611,18 +578,75 @@ article.grid section.card:nth-child(7) img{
     justify-content: center;
     align-items: center;
 }
+
+
+.card img{
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding:20px;
+    background-color: var(--white);
+    text-align: center;
+    max-width: 95%;
+    word-wrap: break-word;
+}
+.card .website{
+    font-style: italic;
+    text-decoration: underline;
+    cursor: pointer;
+    color:var(--dark);
+}
+.card .website:active{
+    color: var(--orange);
+}
+
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+}
+.grid .card{
+    box-shadow:var(--dark) 1px 2px 3px -1px;
+    border: .5px solid #3d3d3a75;
+}
+.grid p{
+    margin-bottom: .5rem;
+}
+.grid .name{
+    display: none;
+}
+
+
+
 .list{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.list .membershipLevel{
+    display: none;
+}
 .list img{
     display: none;
 }
-.list section{
+.list .card >*{
+    margin-bottom: .5rem;
+}
+.list .card{
     display: block;
     width: 90%;
     margin: 0;
+    text-align: left;
     border-left: 1px solid var(--dark);
     border-right: 1px solid var(--dark);
 }
@@ -633,15 +657,10 @@ article.grid section.card:nth-child(7) img{
     border-bottom: 1px solid var(--dark);
 }
 
-.list section > * {
-    margin: 0;
-    padding: 5px; 
-    text-align: left;
-}
 
 .list section:nth-child(odd){
-    color:var(--white);
-    background-color: var(--blue);
+
+    background-color: var(--light-blue);
 }
 #weather-forecast{
     width: 100%;
@@ -659,12 +678,4 @@ article.grid section.card:nth-child(7) img{
     justify-content: space-between;
     margin-top: 1rem;
     text-align: right;
-}
-@media screen and (max-width:400px){
-    .forecast-container{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
 }
