@@ -74,6 +74,7 @@
         place-items: center;
         background-color: #f2e7dcb2;
         padding-bottom: 3.5em;
+        align-items: flex-start;
     }
 
 
@@ -83,7 +84,7 @@
         row-gap: 1em;
         column-gap: 1em;
         width: min-content;
-        margin-left: 1rem;
+        margin:0 0 0 1rem;
     }
   
 
@@ -118,7 +119,6 @@
 
 
     #weather-container {
-        padding-bottom: 5em;
         border-radius: 15px;
         margin: 2em 1rem 0 1rem ;
         width: 100%;
@@ -136,9 +136,7 @@
         width: 25%;
         height: 315px;
     }
-    .comp-card img{
-        width: 80%;
-    }
+    
 
     .comp-img{
         height: 180px;
@@ -347,7 +345,7 @@
     
     
 }
-@media screen and (min-width: 790px) and (max-width: 930px) {
+@media screen and (min-width: 790px) and (max-width: 1020px) {
     .forecast-container{
         flex-direction: column;
         align-items: center;
@@ -356,6 +354,10 @@
     }
     #weather-container{
         padding: 1.5em;
+        max-width: 300px;
+    }
+    .event-card img {
+        width: 225px;
     }
 
 }

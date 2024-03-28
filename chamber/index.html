@@ -56,7 +56,10 @@
             <h1>Miami<br> Chamber of Commerce</h1>
 
             <div id="join-container">
-                <button id="join">Join Now</button>
+                <form action="join.html">
+                    <button id="join">Join Now</button>
+                </form>
+                
             </div>
         </div>
 
@@ -100,7 +103,7 @@
                     <p id="weather-date-p"></p>
                 </div>
                 <div id="weather-info">
-                    <p><span id="weather-temp"></span></p>
+                    <p><span id="weather-temp">77.59° F - clear sky</span></p>
                 </div>
                 <div id="weather-icon">
                     <img id="weather-icon-img">
@@ -109,17 +112,20 @@
                     <h4>3-Day Forecast</h4>
                     <div class="forecast-container">
                         <p id="weather-date-p1"> </p>
-                        <p><span id="weather-temp1"></span></p>
+                        <div class="weather-temp-img" id="weather-temp1-img"></div>
+                        <div class=weather-temp id="weather-temp1"></div>
                     </div>
                     
                     <div class="forecast-container">
                         <p id="weather-date-p2"></p>
-                        <p><span id="weather-temp2"></span></p>
+                        <div class="weather-temp-img" id="weather-temp2-img"></div>
+                        <div class=weather-temp id="weather-temp2"></div>
                     </div>
                     
                     <div class="forecast-container">
                         <p id="weather-date-p3"></p>
-                        <p><span id="weather-temp3"></span></p>
+                        <div class="weather-temp-img" id="weather-temp3-img"></div>
+                        <div class=weather-temp id="weather-temp3"></div>
                     </div>
                     
 
@@ -129,8 +135,6 @@
 
         </section>
 
-
-        </section>
 
         <section id="spotlight-section">
             <h2>Exploring Success Stories:</h2>
