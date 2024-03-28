@@ -12,7 +12,7 @@
     header {
         display: grid;
         grid-template-columns: 1fr 8fr;
-        grid-template-rows: 50px;
+        grid-template-rows: 55px;
     }
 
     #logo {
@@ -158,16 +158,30 @@
         display: none;
     }
 
-    .sidebard {
+    .sidebar {
         background-color: #e9e8e6d5;
         border: none;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         height: 100%;
-        padding: 0;
+        z-index: -1;
+        padding: 2rem 0 0 0;
     }
+    .sidebar p{
+        margin:0;
+    }
+
+
+    #sidebar-content{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:0;
+    }
+    
 
    
 
@@ -195,6 +209,9 @@
 
     .sidebard-card img {
         width: 100%;
+    }
+    #discover-visits{
+        margin:0;
     }
 
 
