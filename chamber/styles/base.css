@@ -1,5 +1,5 @@
 :root {
-    --white: #F6F6F6;
+    --white: #FFFFFD;
     --dark: #3d3d3a;
     --dark-faded: #3d3d3a32;
     --cream: #f2e7dcb2;
@@ -20,7 +20,7 @@
 body {
     font-family: 'Lato', sans-serif;
     color: #3d3d3a;
-    background-color: #FAF9F6;
+    background-color: var(--white);
 }
 
 main h1 {
@@ -576,7 +576,7 @@ input[type="radio"] {
     width: 93%;
     cursor: pointer;
     margin: 2em auto 4em;
-    background: var(--orange);
+    background: var(--pink);
     color: var(--white);
 }
 
@@ -603,7 +603,7 @@ input[type="radio"] {
 }
 
 .benefits>p {
-    color: var(--blue)
+    color: var(--pink);
 }
 
 /*THANK YOU PAGE*/
@@ -688,7 +688,7 @@ article {
     align-items: center;
     margin: 10px;
     padding: 20px;
-    background-color: var(--white);
+    background-color: var(--grey-bg);
     text-align: center;
     max-width: 95%;
     word-wrap: break-word;
