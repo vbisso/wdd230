@@ -17,7 +17,7 @@ const weatherIcon3 = document.querySelector('#weather-temp3-img');
 
 //GETTING AND SETTING THE DATES
 let now = new Date()
-let current_date = now.toLocaleDateString('en-us', { weekday: "long", month: "long", day: "numeric" });
+let current_date = now.toLocaleDateString('en-us', { weekday: "long", month: "long", day: "2-digit" });
 date.textContent = current_date;
 
 let nowDate = new Date(now);
@@ -25,20 +25,23 @@ let nowDate = new Date(now);
 let next1Day = nowDate;
 next1Day.setDate(now.getDate() + 1);
 let next1DayFormatted = next1Day.toLocaleDateString('en-us', { weekday: "short" });
-let next1DayNumeric = next1Day.toLocaleDateString('en-us', { day: "numeric" });
+let next1DayNumeric = next1Day.toLocaleDateString('en-us', { day: "2-digit" });
 date1.textContent = next1DayFormatted;
 
 let next2Day = nowDate;
 next2Day.setDate(now.getDate() + 2);
 let next2DayFormatted = next2Day.toLocaleDateString('en-us', { weekday: "short" });
-let next2DayNumeric = next2Day.toLocaleDateString('en-us', { day: "numeric" });
+let next2DayNumeric = next2Day.toLocaleDateString('en-us', { day: "2-digit" });
 date2.textContent = next2DayFormatted;
 
 let next3Day = nowDate;
 next3Day.setDate(now.getDate() + 3);
 let next3DayFormatted = next3Day.toLocaleDateString('en-us', { weekday: "short" });
-let next3DayNumeric = next3Day.toLocaleDateString('en-us', { day: "numeric" });
+let next3DayNumeric = next3Day.toLocaleDateString('en-us', { day: "2-digit" });
+
 date3.textContent = next3DayFormatted;
+
+//console.log(next1DayFormatted, next1DayNumeric, next2DayFormatted, next2DayNumeric, next3DayFormatted, next3DayNumeric);
 
 //25.762288118958942, -80.18792049814361  COORDINATES
 //0fd9156e83d87c74cc229489054f52be API KEY
@@ -62,8 +65,8 @@ const next3Daylist = [];
 async function getForecastData() {
     const response = await fetch(urlForecast);
     const data = await response.json();
-    console.log(data);
 
+    console.log(data);
     
     for (let i = 0; i < data.list.length; i++) {
         let listDate = data.list[i].dt_txt;
@@ -84,13 +87,19 @@ async function getForecastData() {
 
     //DISPLAY DATA
     const fetchIconUrl = (temp) => {
-        const item = data.list.find(item => item.main.temp === temp);
-        return `https://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`;
-        //console.log( item.weather[0].icon);
-        
+        for (let i = 0; i < data.list.length; i++) {
+            if (data.list[i].main.temp === temp && data.list[i].weather && data.list[i].weather[0] && data.list[i].weather[0].icon) {
+                return `https://openweathermap.org/img/wn/${data.list[i].weather[0].icon}@2x.png`;
+                
+            }
+            
+        }
+        console.error('Failed to fetch icon URL for temperature:', temp);
+        return null; 
     };
     
     let next1MaxDayTemp = Math.max(...next1Daylist);
+    console.log(next1Daylist,next1MaxDayTemp);
     let next1MinDayTemp = Math.min(...next1Daylist);
     let next1Daysum = next1Daylist.reduce((total, temp) => total + temp, 0); //calculating the avg temp
     let next1DayAvgTemp = next1Daysum / next1Daylist.length ;
@@ -100,10 +109,10 @@ async function getForecastData() {
     let meter1Range = next1MaxDayTemp - next1MinDayTemp;
     let meter1Left = ((next1DayAvgTemp - next1MinDayTemp) / meter1Range)*100;
     meter1Element.style.setProperty('--leftPosition1', `${meter1Left}%`);
-    weatherIcon1.innerHTML = `<img src="${iconUrl1}" alt="forecast weather icon 1">`;
-
+    weatherIcon1.innerHTML = `<img src=${iconUrl1} alt="forecast weather icon 1">`;
 
     let next2MaxDayTemp = Math.max(...next2Daylist);
+    console.log(next2Daylist,next2MaxDayTemp);
     let next2MinDayTemp = Math.min(...next2Daylist);
     let next2Daysum = next2Daylist.reduce((total, temp) => total + temp, 0); //calculating the avg temp
     let next2DayAvgTemp = next2Daysum / next2Daylist.length;
@@ -113,10 +122,11 @@ async function getForecastData() {
     let meter2Range = next2MaxDayTemp - next2MinDayTemp;
     let meter2Left = ((next2DayAvgTemp - next2MinDayTemp) / meter2Range)*100;
     meter2Element.style.setProperty('--leftPosition2', `${meter2Left}%`);
-    weatherIcon2.innerHTML = `<img src="${iconUrl2}" alt="forecast weather icon 2">`;
+    weatherIcon2.innerHTML = `<img src=${iconUrl2} alt="forecast weather icon 2">`;
 
 
     let next3MaxDayTemp = Math.max(...next3Daylist);
+    console.log(next3Daylist,next3MaxDayTemp);
     let next3MinDayTemp = Math.min(...next3Daylist);
     let next3Daysum = next3Daylist.reduce((total, temp) => total + temp, 0); //calculating the avg temp
     let next3DayAvgTemp = next3Daysum / next3Daylist.length;
@@ -126,7 +136,7 @@ async function getForecastData() {
     let meter3Range = next3MaxDayTemp - next3MinDayTemp;
     let meter3Left = ((next3DayAvgTemp - next3MinDayTemp) / meter3Range)*100;
     meter3Element.style.setProperty('--leftPosition3', `${meter3Left}%`);
-    weatherIcon3.innerHTML = `<img src="${iconUrl3}" alt="forecast weather icon 3">`;
+    weatherIcon3.innerHTML = `<img src=${iconUrl3} alt="forecast weather icon 3">`;
     
 }
 
