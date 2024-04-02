@@ -306,6 +306,9 @@
         margin-top: 2.6rem;
 
     }
+    .benefitsContainer {
+        border:.5px solid var(--dark);
+    }
     #main-form{
         display: flex;
         justify-content: space-around;
