@@ -407,7 +407,8 @@ header {
 
 footer {
     background-color: var(--dark);
-    padding: 3em;
+    padding: 2em 0 2em 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -456,9 +457,11 @@ footer p {
 }
 
 .sidebard-card {
-    border: .5px solid #3d3d3a;
+    border: .1px solid #3d3d3a;
+    border-radius: 8px;
     max-width: 275px;
     margin:1rem auto 1rem auto;
+    background-color: var(--white);
 
 
 }
@@ -494,6 +497,7 @@ footer p {
     color: #3d3d3a;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
+    background: var(--white);
 }
 
 .discover-content h1 {
@@ -508,9 +512,29 @@ footer p {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    border: 1px solid var(--dark);
 }
 
 /*JOIN US*/
+#palm-tree1{
+    z-index: -1;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    opacity: 85%;
+    width: 30%;
+}
+
+#palm-tree2{
+    z-index: -1;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 85%;
+    width: 30%;
+}
 #main-form {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -597,7 +621,7 @@ input[type="radio"] {
 }
 
 .benefitsContainer {
-    background-color: #ebeae657;
+    background-color: #fefefe;
     border-radius: 15px;
     padding: 1rem;
     border:.5px solid var(--dark);
@@ -608,23 +632,38 @@ input[type="radio"] {
 }
 
 /*THANK YOU PAGE*/
+#thankyou-body{
+    overflow:hidden;
+    height: 100vh;
+}
 #main-thanyou {
-    padding: 10% 5% 0 5%;
+    padding-top: 8%;
+    margin:0 1rem 0 1rem;
 }
 
 #main-thanyou p {
     text-align: center;
     font-size: 24px;
+    margin-bottom: 1rem;
 }
 
 #main-thanyou div {
     height: auto;
-    margin: 5rem auto 0 auto;
     text-align: center;
-    width: 50%;
+    width: 30%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
 }
 
 #main-thanyou img {
+    width: 100%;
+}
+#thankyou-footer{
+    position: fixed;
+    bottom: 0;
     width: 100%;
 }
 
@@ -767,8 +806,10 @@ article {
 
 .list section:nth-child(even) {
 
-    background-color:   #ffb99cd2;
+    background-color:#ffb99c;
 }
-.list section:nth-child(odd) {
-    background-color:#df7395cf ;
+.list section:nth-child(odd), .list section:nth-child(odd) a {
+    background-color:#be3862 ;
+    color:var(--white);
 }
+
