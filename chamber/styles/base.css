@@ -84,7 +84,7 @@ main h1 {
     font-size: 2.2em;
     margin: 0 0 0.5rem 0;
     text-align: left;
-    text-shadow: #626262 0 2.2px 0px;
+    text-shadow: #494848 0 5.2px 0px;
 }
 
 /*JOIN BUTTON*/
@@ -145,11 +145,11 @@ main h1 {
 
 .navigationList a {
     text-decoration: none;
-    color: #F2E7DC;
+    color: var(--white);
 }
 
 .navigationList a:hover {
-    color: rgb(242, 231, 220, 0.8);
+    color: #d6d6d1;
 }
 
 
@@ -169,7 +169,7 @@ header {
 /*MENU BUTTOM*/
 #menuButton {
     border: 0px;
-    background-color: #FAF9F6;
+    background-color:var(--white);
     font-size: 1.5em;
     cursor: pointer;
     color: #3d3d3a;
@@ -597,9 +597,10 @@ input[type="radio"] {
 }
 
 .benefitsContainer {
-    background-color: var(--grey-bg);
+    background-color: #ebeae657;
     border-radius: 15px;
     padding: 1rem;
+    border:.5px solid var(--dark);
 }
 
 .benefits>p {
@@ -764,7 +765,10 @@ article {
 }
 
 
-.list section:nth-child(odd) {
+.list section:nth-child(even) {
 
-    background-color: var(--light-blue);
+    background-color:   #ffb99cd2;
+}
+.list section:nth-child(odd) {
+    background-color:#df7395cf ;
 }
